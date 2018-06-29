@@ -35,8 +35,6 @@ public class Controller {
     private  void connect() throws IOException, ParseException {
 
         // قسمت اعتبار سنجی ورودی ها هم باید اضافه شود
-
-
         // اتصال و لاگین به متااسپبویت
         MsgPackRpc requset = new MsgPackRpc();
         requset.Connect(txtHost.getText().trim(),Integer.parseInt(txtPort.getText().trim()),false);
