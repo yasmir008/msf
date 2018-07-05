@@ -38,14 +38,50 @@ public class MsgPackRpc {
         return true;
     }
 
-    //
     /**
-     * لاگین به متااسپلویت با نام کاربری و رمز عبور
-     * @param username نام کاربری
-     * @param password رمز عبور
-     * @return JSONObject {result = 'success or fail' , token if success}
+     * @param methodName
+     * @param args method pass parameters
+     * @return JSONObject result
      */
-    public JSONObject login(String username, String password) {
+    public JSONObject rpcCall(String methodName,String... args) {
+
+        JSONObject json = null;
+        try {
+            connection = url.openConnection();
+
+            connection.setDoOutput(true);
+            connection.setDoInput(true);
+            connection.setUseCaches(false);
+            connection.setRequestProperty("Content-Type", "binary/message-pack");
+            MessagePack msg = new MessagePack();
+            try (OutputStream out = connection.getOutputStream()) {
+                Packer pack = msg.createPacker(out);
+                
+                // تبدیل مقادیر به msgpack و افزودن آن به بدنه بسته http و ارسال
+                pack.writeArrayBegin(args.length);
+                pack.write(methodName);
+                for (String arg : args) {
+                    pack.write(arg);
+                }
+                pack.writeArrayEnd();
+            }
+
+            // خواندن پاسخ سرور و متااسپلویت
+            InputStream is = connection.getInputStream();
+            Value val = msg.createUnpacker(is).readValue();
+
+            JSONParser parser = new JSONParser();
+            json = (JSONObject) parser.parse(val.toString());
+
+
+        } catch (IOException | ParseException e) {
+        }
+        return json;      
+    }
+}
+    
+ /*   
+     public JSONObject moduleState(String useString, String password) {
 
         JSONObject json = null;
         try {
@@ -81,4 +117,4 @@ public class MsgPackRpc {
         return json;
     }
 
-}
+}*/
