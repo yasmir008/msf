@@ -177,7 +177,7 @@ public class ApiController {
         }
 
     } 
-    /*
+    
     public JSONObject moduleExecute(String moduleType,String moduleName,Map params) {
         JSONObject json = null;
         try {
@@ -189,6 +189,6 @@ public class ApiController {
             throw e;
         }
 
-    } */
+    } 
 
 }
