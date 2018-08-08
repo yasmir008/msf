@@ -29,33 +29,23 @@ public class EnterPageController implements Initializable {
     private String host;
     private int port;
     private String token;
-    private useCases useCase;
+    private BIL useCase;
     
     public EnterPageController(){
-        useCase = new useCases();
+        useCase = new BIL();
     }
-    
-    
     
     @FXML
     private JFXTextField txtUserName;
     
-    
-    
     @FXML
     private JFXPasswordField txtPassword;
     
-    
-    
     @FXML
     private JFXTextField txtHost;
-
-
     
     @FXML
     private JFXTextField txtPort;
-
-        
         
     @FXML
     private JFXButton btnConnect;
@@ -91,7 +81,9 @@ public class EnterPageController implements Initializable {
         {
             token = login_Result_json.get("token").toString();
             alert.setContentText("OK:)");
-            // show the original windows
+            
+            
+            // show the original windows and pass the token with usecse;
         }
         else if (Boolean.parseBoolean(login_Result_json.get("error").toString()) == true){
             alert.setContentText("اطلاعات وارد شده صحیح نمیباشد");
