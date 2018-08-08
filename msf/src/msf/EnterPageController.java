@@ -84,15 +84,24 @@ public class EnterPageController implements Initializable {
 
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
 
-        if (login_Result_json.get("result").toString().equals("success"))
+        if (login_Result_json.get("result") == null) {
+            
+            alert.setContentText("No Such Server!");
+        }
+        
+        else if (login_Result_json.get("result").toString().equals("success"))
         {
             try {
-                token = login_Result_json.get("token").toString();
+                useCase.token = login_Result_json.get("token").toString();
                 alert.setContentText("OK:)");
                 
                 FXMLLoader loader = new FXMLLoader();
                 loader.setLocation(getClass().getResource("MsfLoginHere.fxml"));
                 Parent content = loader.load();
+                
+                MsfLoginHereController msfLoginHereController = loader.getController();
+                msfLoginHereController.setBIL(useCase);
+                
                 Stage stageTheBtnBelongs = (Stage) btnConnect.getScene().getWindow();
                 
                 Scene mainScene = new Scene(content);

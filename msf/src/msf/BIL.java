@@ -19,7 +19,7 @@ import org.json.simple.JSONObject;
  */
 public class BIL {
 
-    private String token;
+    public String token;
     MsgPackRpc msg;
     ApiController api;
 

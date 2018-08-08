@@ -10,6 +10,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.input.MouseEvent;
 
 /**
  * FXML Controller class
@@ -34,6 +35,12 @@ public class MsfLoginHereController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-    }    
+    }
+    
+    
+    
+    @FXML void EsteragSam (MouseEvent mouseEvent) {
+        //System.out.println(bil.token);
+    }
     
 }
