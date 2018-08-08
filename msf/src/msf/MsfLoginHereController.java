@@ -6,11 +6,15 @@
 package msf;
 
 import com.jfoenix.controls.JFXButton;
+import java.io.File;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.AnchorPane;
 
 /**
  * FXML Controller class
@@ -21,6 +25,7 @@ public class MsfLoginHereController implements Initializable {
 
     
     @FXML JFXButton btn_shonud;
+    @FXML AnchorPane pane;
     
     private BIL bil;
     
@@ -37,10 +42,23 @@ public class MsfLoginHereController implements Initializable {
         // TODO
     }
     
-    
+   
     
     @FXML void EsteragSam (MouseEvent mouseEvent) {
+        
         //System.out.println(bil.token);
+        
+        ImageView imageView = new ImageView();
+        File file = new File("src/back.png");
+        Image image = new Image(file.toURI().toString());
+        imageView.setImage(image);
+        
+        
+        Session sampleSession = 
+                new Session("Android Device", 10, 20, imageView) {};
+        
+        pane.getChildren().add (sampleSession);
+        
     }
     
 }

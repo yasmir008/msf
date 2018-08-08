@@ -29,7 +29,7 @@
             <JFXButton layoutX="487.0" layoutY="200.0" maxHeight="-Infinity" prefWidth="88.43" text="خروج" />
             <ScrollPane layoutX="47.0" layoutY="264.0" prefHeight="113.0" prefWidth="529.0">
               <content>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
+                <AnchorPane fx:id="pane" minHeight="0.0" minWidth="0.0" prefHeight="163.0" prefWidth="514.0" />
               </content>
             </ScrollPane>
          </children></Pane>
