@@ -43,7 +43,7 @@ public class MsgPackRpc {
      * @param args method pass parameters
      * @return JSONObject result
      */
-    public JSONObject rpcCall(String methodName,String... args) {
+    public JSONObject rpcCall(String methodName,Object... args) {
 
         JSONObject json = null;
         try {
@@ -58,7 +58,7 @@ public class MsgPackRpc {
                 Packer pack = msg.createPacker(out);
                 
                 // تبدیل مقادیر به msgpack و افزودن آن به بدنه بسته http و ارسال
-                pack.writeArrayBegin(args.length);
+                pack.writeArrayBegin(args.length+1);
                 pack.write(methodName);
                 for (Object arg : args) {
                     pack.write(arg.toString());
