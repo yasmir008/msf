@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="592.0" prefWidth="644.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="msf.MeterpreterController">
+   <children>
+      <Pane layoutY="-1.0" prefHeight="581.0" prefWidth="720.0">
+         <children>
+            <TabPane layoutX="2.0" layoutY="120.0" prefHeight="475.0" prefWidth="720.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab text="Webcam">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <JFXButton layoutX="14.0" layoutY="14.0" prefHeight="116.0" prefWidth="131.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));;" text="لیست وب کم ها" textAlignment="CENTER" textFill="#e5ff00" underline="true">
+                                 <font>
+                                    <Font name="B Yekan" size="14.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton layoutX="161.0" layoutY="14.0" prefHeight="116.0" prefWidth="131.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));;" text="گرفتن وب کم" textAlignment="CENTER" textFill="#e5ff00" underline="true">
+                                 <font>
+                                    <Font name="B Yekan" size="14.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton layoutX="308.0" layoutY="14.0" prefHeight="116.0" prefWidth="131.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));;" text="ضبط میکروفون" textAlignment="CENTER" textFill="#e5ff00" underline="true">
+                                 <font>
+                                    <Font name="B Yekan" size="14.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton layoutX="456.0" layoutY="14.0" prefHeight="116.0" prefWidth="131.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));;" text="اجرای وب کم" textAlignment="CENTER" textFill="#e5ff00" underline="true">
+                                 <font>
+                                    <Font name="B Yekan" size="14.0" />
+                                 </font>
+                              </JFXButton>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                <Tab text="User Interface Command">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <JFXButton layoutX="14.0" layoutY="14.0" prefHeight="116.0" prefWidth="131.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));;" text="enumdesktops" textAlignment="CENTER" textFill="#e5ff00" underline="true">
+                                 <font>
+                                    <Font name="B Yekan" size="14.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton layoutX="160.0" layoutY="14.0" prefHeight="116.0" prefWidth="131.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));;" text="getdesktop" textAlignment="CENTER" textFill="#e5ff00" underline="true">
+                                 <font>
+                                    <Font name="B Yekan" size="14.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton layoutX="306.0" layoutY="14.0" prefHeight="116.0" prefWidth="131.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));;" text="idletime" textAlignment="CENTER" textFill="#e5ff00" underline="true">
+                                 <font>
+                                    <Font name="B Yekan" size="14.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton layoutX="452.0" layoutY="14.0" prefHeight="116.0" prefWidth="131.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));;" text="keyscan_dump" textAlignment="CENTER" textFill="#e5ff00" underline="true">
+                                 <font>
+                                    <Font name="B Yekan" size="14.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton layoutX="14.0" layoutY="145.0" prefHeight="116.0" prefWidth="131.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));;" text="keyscan_start" textAlignment="CENTER" textFill="#e5ff00" underline="true">
+                                 <font>
+                                    <Font name="B Yekan" size="14.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton layoutX="160.0" layoutY="145.0" prefHeight="116.0" prefWidth="131.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));;" text="keyscanstop" textAlignment="CENTER" textFill="#e5ff00" underline="true">
+                                 <font>
+                                    <Font name="B Yekan" size="14.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton layoutX="306.0" layoutY="145.0" prefHeight="116.0" prefWidth="131.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));;" text="screenshot" textAlignment="CENTER" textFill="#e5ff00" underline="true">
+                                 <font>
+                                    <Font name="B Yekan" size="14.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton layoutX="452.0" layoutY="145.0" prefHeight="116.0" prefWidth="131.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));;" text="setdesktop" textAlignment="CENTER" textFill="#e5ff00" underline="true">
+                                 <font>
+                                    <Font name="B Yekan" size="14.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton layoutX="14.0" layoutY="274.0" prefHeight="116.0" prefWidth="131.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));;" text="uictl" textAlignment="CENTER" textFill="#e5ff00" underline="true">
+                                 <font>
+                                    <Font name="B Yekan" size="14.0" />
+                                 </font>
+                              </JFXButton>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                  <Tab text="System Command">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <JFXButton layoutX="14.0" layoutY="14.0" prefHeight="116.0" prefWidth="131.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));;" text="clearev" textAlignment="CENTER" textFill="#e5ff00" underline="true">
+                                 <font>
+                                    <Font name="B Yekan" size="14.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton layoutX="162.0" layoutY="14.0" prefHeight="116.0" prefWidth="131.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));;" text="drop token" textAlignment="CENTER" textFill="#e5ff00" underline="true">
+                                 <font>
+                                    <Font name="B Yekan" size="14.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton layoutX="310.0" layoutY="14.0" prefHeight="116.0" prefWidth="131.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));;" text="execute" textAlignment="CENTER" textFill="#e5ff00" underline="true">
+                                 <font>
+                                    <Font name="B Yekan" size="14.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton layoutX="459.0" layoutY="14.0" prefHeight="116.0" prefWidth="131.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));;" text="getenv" textAlignment="CENTER" textFill="#e5ff00" underline="true">
+                                 <font>
+                                    <Font name="B Yekan" size="14.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton layoutX="14.0" layoutY="144.0" prefHeight="116.0" prefWidth="131.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));;" text="getpid" textAlignment="CENTER" textFill="#e5ff00" underline="true">
+                                 <font>
+                                    <Font name="B Yekan" size="14.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton layoutX="162.0" layoutY="144.0" prefHeight="116.0" prefWidth="131.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));;" text="getprivs" textAlignment="CENTER" textFill="#e5ff00" underline="true">
+                                 <font>
+                                    <Font name="B Yekan" size="14.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton layoutX="310.0" layoutY="144.0" prefHeight="116.0" prefWidth="131.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));;" text="getsid" textAlignment="CENTER" textFill="#e5ff00" underline="true">
+                                 <font>
+                                    <Font name="B Yekan" size="14.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton layoutX="459.0" layoutY="144.0" prefHeight="116.0" prefWidth="131.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));;" text="getuid" textAlignment="CENTER" textFill="#e5ff00" underline="true">
+                                 <font>
+                                    <Font name="B Yekan" size="14.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton layoutX="14.0" layoutY="275.0" prefHeight="116.0" prefWidth="131.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));;" text="kill" textAlignment="CENTER" textFill="#e5ff00" underline="true">
+                                 <font>
+                                    <Font name="B Yekan" size="14.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton layoutX="162.0" layoutY="275.0" prefHeight="116.0" prefWidth="131.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));;" text="localtime" textAlignment="CENTER" textFill="#e5ff00" underline="true">
+                                 <font>
+                                    <Font name="B Yekan" size="14.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton layoutX="310.0" layoutY="275.0" prefHeight="116.0" prefWidth="131.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));;" text="pgrep" textAlignment="CENTER" textFill="#e5ff00" underline="true">
+                                 <font>
+                                    <Font name="B Yekan" size="14.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton layoutX="459.0" layoutY="275.0" prefHeight="116.0" prefWidth="131.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));;" text="ps" textAlignment="CENTER" textFill="#e5ff00" underline="true">
+                                 <font>
+                                    <Font name="B Yekan" size="14.0" />
+                                 </font>
+                              </JFXButton>
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </Tab>
+                  <Tab text="Network Command">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                    </content>
+                  </Tab>
+                  <Tab text="File System Command">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                    </content>
+                  </Tab>
+                  <Tab text="Core Command">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                    </content>
+                  </Tab>
+              </tabs>
+            </TabPane>
+            <Label layoutX="254.0" layoutY="53.0" text="METERPRETER">
+               <font>
+                  <Font name="Consolas" size="35.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
