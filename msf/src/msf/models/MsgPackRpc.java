@@ -20,8 +20,8 @@ public class MsgPackRpc {
 
     private URL url;
     private URLConnection connection;
-
-
+    public MsgPackRpc(){
+    }
     public Boolean Connect(String host, int port, Boolean isSSL) {
         if (isSSL) {
             // ssl coonect
@@ -60,8 +60,8 @@ public class MsgPackRpc {
                 // تبدیل مقادیر به msgpack و افزودن آن به بدنه بسته http و ارسال
                 pack.writeArrayBegin(args.length);
                 pack.write(methodName);
-                for (String arg : args) {
-                    pack.write(arg);
+                for (Object arg : args) {
+                    pack.write(arg.toString());
                 }
                 pack.writeArrayEnd();
             }
