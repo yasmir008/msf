@@ -21,7 +21,12 @@ public class MsfLoginHereController implements Initializable {
     
     @FXML JFXButton btn_shonud;
     
+    private BIL bil;
     
+    
+    public void setBIL (BIL bil) {
+        this.bil = bil;
+    }
     
     /**
      * Initializes the controller class.

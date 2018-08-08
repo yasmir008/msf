@@ -8,14 +8,21 @@ package msf;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXPasswordField;
 import com.jfoenix.controls.JFXTextField;
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
+import javafx.stage.Stage;
 import msf.models.MsgPackRpc;
 import org.json.simple.JSONObject;
 
@@ -79,11 +86,25 @@ public class EnterPageController implements Initializable {
 
         if (login_Result_json.get("result").toString().equals("success"))
         {
-            token = login_Result_json.get("token").toString();
-            alert.setContentText("OK:)");
-            
-            
-            // show the original windows and pass the token with usecse;
+            try {
+                token = login_Result_json.get("token").toString();
+                alert.setContentText("OK:)");
+                
+                FXMLLoader loader = new FXMLLoader();
+                loader.setLocation(getClass().getResource("MsfLoginHere.fxml"));
+                Parent content = loader.load();
+                Stage stageTheBtnBelongs = (Stage) btnConnect.getScene().getWindow();
+                
+                Scene mainScene = new Scene(content);
+                
+                stageTheBtnBelongs.setScene(mainScene);
+                
+                
+                
+                // show the original windows and pass the token with usecse;
+            } catch (IOException ex) {
+                Logger.getLogger(EnterPageController.class.getName()).log(Level.SEVERE, null, ex);
+            }
         }
         else if (Boolean.parseBoolean(login_Result_json.get("error").toString()) == true){
             alert.setContentText("اطلاعات وارد شده صحیح نمیباشد");
