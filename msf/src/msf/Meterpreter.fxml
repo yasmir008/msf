@@ -410,137 +410,137 @@
                                                 <Font name="B Yekan" size="14.0" />
                                              </font>
                                           </JFXButton>
-                                          <JFXButton layoutX="158.0" layoutY="14.0" prefHeight="51.0" prefWidth="131.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));;" text="background" textAlignment="CENTER" textFill="#e5ff00" underline="true">
+                                          <JFXButton layoutX="158.0" layoutY="14.0" onMouseClicked="#background_Click" prefHeight="51.0" prefWidth="131.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));;" text="background" textAlignment="CENTER" textFill="#e5ff00" underline="true">
                                              <font>
                                                 <Font name="B Yekan" size="14.0" />
                                              </font>
                                           </JFXButton>
-                                          <JFXButton layoutX="302.0" layoutY="14.0" prefHeight="51.0" prefWidth="131.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));;" text="bgkill" textAlignment="CENTER" textFill="#e5ff00" underline="true">
+                                          <JFXButton layoutX="302.0" layoutY="14.0" onMouseClicked="#bgkill_Click" prefHeight="51.0" prefWidth="131.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));;" text="bgkill" textAlignment="CENTER" textFill="#e5ff00" underline="true">
                                              <font>
                                                 <Font name="B Yekan" size="14.0" />
                                              </font>
                                           </JFXButton>
-                                          <JFXButton layoutX="447.0" layoutY="14.0" prefHeight="51.0" prefWidth="131.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));;" text="bglist" textAlignment="CENTER" textFill="#e5ff00" underline="true">
+                                          <JFXButton layoutX="447.0" layoutY="14.0" onMouseClicked="#bglist_Click" prefHeight="51.0" prefWidth="131.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));;" text="bglist" textAlignment="CENTER" textFill="#e5ff00" underline="true">
                                              <font>
                                                 <Font name="B Yekan" size="14.0" />
                                              </font>
                                           </JFXButton>
-                                          <JFXButton layoutX="14.0" layoutY="76.0" prefHeight="51.0" prefWidth="131.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));;" text="bgrun" textAlignment="CENTER" textFill="#e5ff00" underline="true">
+                                          <JFXButton layoutX="14.0" layoutY="76.0" onMouseClicked="#bgrun_Click" prefHeight="51.0" prefWidth="131.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));;" text="bgrun" textAlignment="CENTER" textFill="#e5ff00" underline="true">
                                              <font>
                                                 <Font name="B Yekan" size="14.0" />
                                              </font>
                                           </JFXButton>
-                                          <JFXButton layoutX="158.0" layoutY="76.0" prefHeight="51.0" prefWidth="131.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));;" text="channel" textAlignment="CENTER" textFill="#e5ff00" underline="true">
+                                          <JFXButton layoutX="158.0" layoutY="76.0" onMouseClicked="#channel_Click" prefHeight="51.0" prefWidth="131.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));;" text="channel" textAlignment="CENTER" textFill="#e5ff00" underline="true">
                                              <font>
                                                 <Font name="B Yekan" size="14.0" />
                                              </font>
                                           </JFXButton>
-                                          <JFXButton layoutX="302.0" layoutY="76.0" prefHeight="51.0" prefWidth="131.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));;" text="close" textAlignment="CENTER" textFill="#e5ff00" underline="true">
+                                          <JFXButton layoutX="302.0" layoutY="76.0" onMouseClicked="#close_Click" prefHeight="51.0" prefWidth="131.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));;" text="close" textAlignment="CENTER" textFill="#e5ff00" underline="true">
                                              <font>
                                                 <Font name="B Yekan" size="14.0" />
                                              </font>
                                           </JFXButton>
-                                          <JFXButton layoutX="447.0" layoutY="76.0" prefHeight="51.0" prefWidth="131.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));;" text="disable_unic-enco" textAlignment="CENTER" textFill="#e5ff00" underline="true">
+                                          <JFXButton layoutX="447.0" layoutY="76.0" onMouseClicked="#dis_unicode_Click" prefHeight="51.0" prefWidth="131.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));;" text="disable_unic-enco" textAlignment="CENTER" textFill="#e5ff00" underline="true">
                                              <font>
                                                 <Font name="B Yekan" size="14.0" />
                                              </font>
                                           </JFXButton>
-                                          <JFXButton layoutX="14.0" layoutY="139.0" prefHeight="51.0" prefWidth="131.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));;" text="enable_unic-enco" textAlignment="CENTER" textFill="#e5ff00" underline="true">
+                                          <JFXButton layoutX="14.0" layoutY="139.0" onMouseClicked="#en_unicode_Click" prefHeight="51.0" prefWidth="131.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));;" text="enable_unic-enco" textAlignment="CENTER" textFill="#e5ff00" underline="true">
                                              <font>
                                                 <Font name="B Yekan" size="14.0" />
                                              </font>
                                           </JFXButton>
-                                          <JFXButton layoutX="158.0" layoutY="139.0" prefHeight="51.0" prefWidth="131.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));;" text="exit" textAlignment="CENTER" textFill="#e5ff00" underline="true">
+                                          <JFXButton layoutX="158.0" layoutY="139.0" onMouseClicked="#exit_Click" prefHeight="51.0" prefWidth="131.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));;" text="exit" textAlignment="CENTER" textFill="#e5ff00" underline="true">
                                              <font>
                                                 <Font name="B Yekan" size="14.0" />
                                              </font>
                                           </JFXButton>
-                                          <JFXButton layoutX="302.0" layoutY="139.0" prefHeight="51.0" prefWidth="131.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));;" text="get_timeouts" textAlignment="CENTER" textFill="#e5ff00" underline="true">
+                                          <JFXButton layoutX="302.0" layoutY="139.0" onMouseClicked="#gettimeouts_Click" prefHeight="51.0" prefWidth="131.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));;" text="get_timeouts" textAlignment="CENTER" textFill="#e5ff00" underline="true">
                                              <font>
                                                 <Font name="B Yekan" size="14.0" />
                                              </font>
                                           </JFXButton>
-                                          <JFXButton layoutX="447.0" layoutY="139.0" prefHeight="51.0" prefWidth="131.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));;" text="help" textAlignment="CENTER" textFill="#e5ff00" underline="true">
+                                          <JFXButton layoutX="447.0" layoutY="139.0" onMouseClicked="#help2_Click" prefHeight="51.0" prefWidth="131.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));;" text="help" textAlignment="CENTER" textFill="#e5ff00" underline="true">
                                              <font>
                                                 <Font name="B Yekan" size="14.0" />
                                              </font>
                                           </JFXButton>
-                                          <JFXButton layoutX="14.0" layoutY="204.0" prefHeight="51.0" prefWidth="131.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));;" text="info" textAlignment="CENTER" textFill="#e5ff00" underline="true">
+                                          <JFXButton layoutX="14.0" layoutY="204.0" onMouseClicked="#info_Click" prefHeight="51.0" prefWidth="131.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));;" text="info" textAlignment="CENTER" textFill="#e5ff00" underline="true">
                                              <font>
                                                 <Font name="B Yekan" size="14.0" />
                                              </font>
                                           </JFXButton>
-                                          <JFXButton layoutX="158.0" layoutY="204.0" prefHeight="51.0" prefWidth="131.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));;" text="irb" textAlignment="CENTER" textFill="#e5ff00" underline="true">
+                                          <JFXButton layoutX="158.0" layoutY="204.0" onMouseClicked="#irb_Click" prefHeight="51.0" prefWidth="131.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));;" text="irb" textAlignment="CENTER" textFill="#e5ff00" underline="true">
                                              <font>
                                                 <Font name="B Yekan" size="14.0" />
                                              </font>
                                           </JFXButton>
-                                          <JFXButton layoutX="302.0" layoutY="204.0" prefHeight="51.0" prefWidth="131.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));;" text="load" textAlignment="CENTER" textFill="#e5ff00" underline="true">
+                                          <JFXButton layoutX="302.0" layoutY="204.0" onMouseClicked="#load_Click" prefHeight="51.0" prefWidth="131.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));;" text="load" textAlignment="CENTER" textFill="#e5ff00" underline="true">
                                              <font>
                                                 <Font name="B Yekan" size="14.0" />
                                              </font>
                                           </JFXButton>
-                                          <JFXButton layoutX="447.0" layoutY="204.0" prefHeight="51.0" prefWidth="131.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));;" text="machine-id" textAlignment="CENTER" textFill="#e5ff00" underline="true">
+                                          <JFXButton layoutX="447.0" layoutY="204.0" onMouseClicked="#machineId_Click" prefHeight="51.0" prefWidth="131.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));;" text="machine-id" textAlignment="CENTER" textFill="#e5ff00" underline="true">
                                              <font>
                                                 <Font name="B Yekan" size="14.0" />
                                              </font>
                                           </JFXButton>
-                                          <JFXButton layoutX="14.0" layoutY="268.0" prefHeight="51.0" prefWidth="131.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));;" text="migrate" textAlignment="CENTER" textFill="#e5ff00" underline="true">
+                                          <JFXButton layoutX="14.0" layoutY="268.0" onMouseClicked="#migrate_Click" prefHeight="51.0" prefWidth="131.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));;" text="migrate" textAlignment="CENTER" textFill="#e5ff00" underline="true">
                                              <font>
                                                 <Font name="B Yekan" size="14.0" />
                                              </font>
                                           </JFXButton>
-                                          <JFXButton layoutX="158.0" layoutY="268.0" prefHeight="51.0" prefWidth="131.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));;" text="quit" textAlignment="CENTER" textFill="#e5ff00" underline="true">
+                                          <JFXButton layoutX="158.0" layoutY="268.0" onMouseClicked="#quit_Click" prefHeight="51.0" prefWidth="131.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));;" text="quit" textAlignment="CENTER" textFill="#e5ff00" underline="true">
                                              <font>
                                                 <Font name="B Yekan" size="14.0" />
                                              </font>
                                           </JFXButton>
-                                          <JFXButton layoutX="302.0" layoutY="268.0" prefHeight="51.0" prefWidth="131.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));;" text="read" textAlignment="CENTER" textFill="#e5ff00" underline="true">
+                                          <JFXButton layoutX="302.0" layoutY="268.0" onMouseClicked="#read_Click" prefHeight="51.0" prefWidth="131.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));;" text="read" textAlignment="CENTER" textFill="#e5ff00" underline="true">
                                              <font>
                                                 <Font name="B Yekan" size="14.0" />
                                              </font>
                                           </JFXButton>
-                                          <JFXButton layoutX="447.0" layoutY="268.0" prefHeight="51.0" prefWidth="131.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));;" text="resource" textAlignment="CENTER" textFill="#e5ff00" underline="true">
+                                          <JFXButton layoutX="447.0" layoutY="268.0" onMouseClicked="#resource_Click" prefHeight="51.0" prefWidth="131.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));;" text="resource" textAlignment="CENTER" textFill="#e5ff00" underline="true">
                                              <font>
                                                 <Font name="B Yekan" size="14.0" />
                                              </font>
                                           </JFXButton>
-                                          <JFXButton layoutX="14.0" layoutY="334.0" prefHeight="51.0" prefWidth="131.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));;" text="run" textAlignment="CENTER" textFill="#e5ff00" underline="true">
+                                          <JFXButton layoutX="14.0" layoutY="334.0" onMouseClicked="#run_Click" prefHeight="51.0" prefWidth="131.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));;" text="run" textAlignment="CENTER" textFill="#e5ff00" underline="true">
                                              <font>
                                                 <Font name="B Yekan" size="14.0" />
                                              </font>
                                           </JFXButton>
-                                          <JFXButton layoutX="158.0" layoutY="334.0" prefHeight="51.0" prefWidth="131.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));;" text="sessions" textAlignment="CENTER" textFill="#e5ff00" underline="true">
+                                          <JFXButton layoutX="158.0" layoutY="334.0" onMouseClicked="#sessions_Click" prefHeight="51.0" prefWidth="131.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));;" text="sessions" textAlignment="CENTER" textFill="#e5ff00" underline="true">
                                              <font>
                                                 <Font name="B Yekan" size="14.0" />
                                              </font>
                                           </JFXButton>
-                                          <JFXButton layoutX="302.0" layoutY="334.0" prefHeight="51.0" prefWidth="131.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));;" text="set_timeouts" textAlignment="CENTER" textFill="#e5ff00" underline="true">
+                                          <JFXButton layoutX="302.0" layoutY="334.0" onMouseClicked="#settimeouts_Click" prefHeight="51.0" prefWidth="131.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));;" text="set_timeouts" textAlignment="CENTER" textFill="#e5ff00" underline="true">
                                              <font>
                                                 <Font name="B Yekan" size="14.0" />
                                              </font>
                                           </JFXButton>
-                                          <JFXButton layoutX="447.0" layoutY="334.0" prefHeight="51.0" prefWidth="131.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));;" text="sleep" textAlignment="CENTER" textFill="#e5ff00" underline="true">
+                                          <JFXButton layoutX="447.0" layoutY="334.0" onMouseClicked="#sleep_Click" prefHeight="51.0" prefWidth="131.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));;" text="sleep" textAlignment="CENTER" textFill="#e5ff00" underline="true">
                                              <font>
                                                 <Font name="B Yekan" size="14.0" />
                                              </font>
                                           </JFXButton>
-                                          <JFXButton layoutX="14.0" layoutY="397.0" prefHeight="51.0" prefWidth="131.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));;" text="transport" textAlignment="CENTER" textFill="#e5ff00" underline="true">
+                                          <JFXButton layoutX="14.0" layoutY="397.0" onMouseClicked="#transport_Click" prefHeight="51.0" prefWidth="131.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));;" text="transport" textAlignment="CENTER" textFill="#e5ff00" underline="true">
                                              <font>
                                                 <Font name="B Yekan" size="14.0" />
                                              </font>
                                           </JFXButton>
-                                          <JFXButton layoutX="158.0" layoutY="397.0" prefHeight="51.0" prefWidth="131.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));;" text="use" textAlignment="CENTER" textFill="#e5ff00" underline="true">
+                                          <JFXButton layoutX="158.0" layoutY="397.0" onMouseClicked="#use_Click" prefHeight="51.0" prefWidth="131.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));;" text="use" textAlignment="CENTER" textFill="#e5ff00" underline="true">
                                              <font>
                                                 <Font name="B Yekan" size="14.0" />
                                              </font>
                                           </JFXButton>
-                                          <JFXButton layoutX="302.0" layoutY="397.0" prefHeight="51.0" prefWidth="131.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));;" text="uuid" textAlignment="CENTER" textFill="#e5ff00" underline="true">
+                                          <JFXButton layoutX="302.0" layoutY="397.0" onMouseClicked="#uuid_Click" prefHeight="51.0" prefWidth="131.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));;" text="uuid" textAlignment="CENTER" textFill="#e5ff00" underline="true">
                                              <font>
                                                 <Font name="B Yekan" size="14.0" />
                                              </font>
                                           </JFXButton>
-                                          <JFXButton layoutX="447.0" layoutY="397.0" prefHeight="51.0" prefWidth="131.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));;" text="write" textAlignment="CENTER" textFill="#e5ff00" underline="true">
+                                          <JFXButton layoutX="447.0" layoutY="397.0" onMouseClicked="#write_Click" prefHeight="51.0" prefWidth="131.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));;" text="write" textAlignment="CENTER" textFill="#e5ff00" underline="true">
                                              <font>
                                                 <Font name="B Yekan" size="14.0" />
                                              </font>
