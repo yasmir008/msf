@@ -15,15 +15,13 @@ import org.json.simple.JSONObject;
  */
 public class ApiController {
 
-    private String token;
     private MsgPackRpc msgRpc;
 
-    public ApiController(String token, MsgPackRpc msgPackRpc) {
-        this.token = token;
+    public ApiController(MsgPackRpc msgPackRpc) {
         msgRpc = msgPackRpc;
     }
 
-    public JSONObject getSessionList() {
+    public JSONObject getSessionList(String token) {
         JSONObject json = null;
         try {
             json = msgRpc.rpcCall("session.list", token);
@@ -35,7 +33,7 @@ public class ApiController {
         }
     }
 
-    public JSONObject sessionStop(String sessionID) {
+    public JSONObject sessionStop(String sessionID,String token) {
         JSONObject json = null;
         try {
             json = msgRpc.rpcCall("session.stop", token, sessionID);
@@ -48,7 +46,7 @@ public class ApiController {
 
     }
 
-    public JSONObject consoleWrite(String consoleID, String command) {
+    public JSONObject consoleWrite(String consoleID, String command,String token) {
         JSONObject json = null;
         try {
             json = msgRpc.rpcCall("console.write", token, consoleID, command);
@@ -61,7 +59,7 @@ public class ApiController {
 
     }
 
-    public JSONObject consoleRead(String consoleID) {
+    public JSONObject consoleRead(String consoleID,String token) {
         JSONObject json = null;
         try {
             json = msgRpc.rpcCall("console.read", token, consoleID);
@@ -74,7 +72,7 @@ public class ApiController {
 
     }
 
-    public JSONObject consoleList() {
+    public JSONObject consoleList(String token) {
         JSONObject json = null;
         try {
             json = msgRpc.rpcCall("console.list", token);
@@ -87,7 +85,7 @@ public class ApiController {
 
     }
 
-    public JSONObject consoleSessionKill(String ConsoleID) {
+    public JSONObject consoleSessionKill(String ConsoleID,String token) {
         JSONObject json = null;
         try {
             json = msgRpc.rpcCall("console.session_kill", token, ConsoleID);
@@ -100,12 +98,15 @@ public class ApiController {
 
     }
 
-    public JSONObject consoleCreate() {
+    public String consoleCreate(String token) {
         JSONObject json = null;
         try {
             json = msgRpc.rpcCall("console.create", token);
 
-            return json;
+            if (json.get("id") != null) {
+                return json.get("id").toString();
+            }
+            return "";
 
         } catch (Exception e) {
             throw e;
@@ -113,7 +114,7 @@ public class ApiController {
 
     }
 
-    public JSONObject sessionMeterpreter_Write(String sessionID, String command) {
+    public JSONObject sessionMeterpreter_Write(String sessionID, String command,String token) {
         JSONObject json = null;
         try {
             json = msgRpc.rpcCall("session.meterpreter_write", token, sessionID, command);
@@ -126,7 +127,7 @@ public class ApiController {
 
     }
 
-    public JSONObject sessionMeterpreter_Read(String sessionID) {
+    public JSONObject sessionMeterpreter_Read(String sessionID,String token) {
         JSONObject json = null;
         try {
             json = msgRpc.rpcCall("session.meterpreter_Read", token, sessionID);
@@ -139,7 +140,7 @@ public class ApiController {
 
     }
 
-    public JSONObject sessionMeterpreter_Run_Single(String sessionID, String command) {
+    public JSONObject sessionMeterpreter_Run_Single(String sessionID, String command,String token) {
         JSONObject json = null;
         try {
             json = msgRpc.rpcCall("session.meterpreter_run_single", token, sessionID, command);
@@ -152,7 +153,7 @@ public class ApiController {
 
     }
     //session.meterpreter_script
-    public JSONObject sessionMeterpreter_script(String sessionID, String scriptName) {
+    public JSONObject sessionMeterpreter_script(String sessionID, String scriptName,String token) {
         JSONObject json = null;
         try {
             json = msgRpc.rpcCall("session.meterpreter_script", token, sessionID, scriptName);
@@ -165,7 +166,7 @@ public class ApiController {
 
     }      
     
-    public JSONObject sessionMeterpreter_session_detach(String sessionID) {
+    public JSONObject sessionMeterpreter_session_detach(String sessionID,String token) {
         JSONObject json = null;
         try {
             json = msgRpc.rpcCall("session.meterpreter_session_detach", token, sessionID);
@@ -178,7 +179,7 @@ public class ApiController {
 
     } 
     
-    public JSONObject moduleExecute(String moduleType,String moduleName,Map params) {
+    public JSONObject moduleExecute(String moduleType,String moduleName,Map params,String token) {
         JSONObject json = null;
         try {
             json = msgRpc.rpcCall("module.execute", token, moduleType,moduleName,params);

